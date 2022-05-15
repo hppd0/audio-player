@@ -1,0 +1,78 @@
+/*-----------------Обнуление----------------------*/
+*,
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul, li {
+  list-style: none;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: Montserrat;
+  color: #252B42
+}
+/*---------------------------------------*/
+
+.main 
+
+.wrapper {
+    width: 100%;
+}
+
+.player__backgruong {
+
+}
+
+.music 
+
+.player {
+    width: 375px;
+    background-color: rgba(9, 9, 9, 0.78);
+    border-radius: 25px;
+}
+
+.player__cover 
+
+.player__singer 
+
+.player__song 
+
+.player__progress 
+
+.current-time 
+
+.time 
+
+.progress-bar 
+
+.length-time 
+
+.player__controls 
+
+.controls__prev 
+
+.controls 
+
+.controls__play 
+
+.play 
+
+.controls__next 
