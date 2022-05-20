@@ -24,55 +24,132 @@ h1, h2, h3, h4, h5, h6 {
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
   line-height: 1;
-  font-family: Montserrat;
-  color: #252B42
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #c2c8d2
 }
+
 /*---------------------------------------*/
 
-.main 
-
 .wrapper {
-    width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.player__backgruong {
-
+.player_conainer {
+  display: flex;
+  height: inherit;
+  position: relative;
 }
 
-.music 
+.player__background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #000000 url(./assets/img/MrRager.jpg) center no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+  z-index: -2;
+}
+
+.music {}
 
 .player {
-    width: 375px;
-    background-color: rgba(9, 9, 9, 0.78);
-    border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: auto;
+  padding: 60px 30px;
+  box-sizing: border-box;
+  width: 375px;
+  height: auto;
+  background-color: rgba(9, 9, 9, 0.78);
+  border-radius: 25px;
 }
 
-.player__cover 
+@media (max-width: 479px) {
+  .player {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 0;
+  }
+}
 
-.player__singer 
+.player__cover {
+  margin: 0px auto;
+  display: flex;
+  width: 318px;
+  height: 318px;
+  background-image: url(./assets/svg/cd.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.player__song 
+.cover_img {
+  margin: auto;
+  width: 150px;
+  border-radius: 100px;
+  border: 5px solid #fe7235;
+}
+.player__singer {
+  font-size: 36px;
+  color: #ffffff
+}
 
-.player__progress 
+.player__song {}
 
-.current-time 
+.player__progress {
+  display: flex;
+  align-items: center;
+  gap: 55px;}
 
-.time 
+.current-time {}
 
-.progress-bar 
+.time {
+  font-size: 14px;
+}
 
-.length-time 
+.progress-bar {}
 
-.player__controls 
+.length-time {}
 
-.controls__prev 
+.player__controls {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
 
-.controls 
+.controls__prev {}
 
-.controls__play 
+.controls {}
 
-.play 
+.controls__play {}
 
-.controls__next 
+.play {}
+
+.controls__next {}
+
+.footer {
+  margin-top: auto;
+  padding: 20px 5px;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  justify-items: center;
+  align-items: center;
+  color: #fe7235;
+  background-color: rgba(9, 9, 9, 0.78);
+}
+
+@media (max-width: 479px) {
+  .footer {
+    grid-template-columns: repeat(3,1fr);
+  }
+}  

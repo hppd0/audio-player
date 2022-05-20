@@ -4,40 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Audio player</title>
 </head>
 <body>
-    <div class="main">
-        <div class="wrapper">
-            <img src="/audio-player/assets/img/MrRager.jpg" alt="" class="player__backgruong">
-            <audio src="/audio-player/assets/music/Kid_Cudi.mp3" class="music"></audio>
+    <div class="wrapper">
+        <div class="player_conainer">
+            <div class="player__background"></div>
+            <audio src="./assets/music/Kid_Cudi.mp3" class="music"></audio>
             <div class="player">
                 <div class="player__cover">
-                    <img src="/audio-player/assets/svg/cd.svg" alt="" class="">
-                    <img src="/audio-player/assets/img/MrRager.jpg" alt="" class="">
+                    <img src="./assets/img/MrRager.jpg" alt="" class="cover_img">
                 </div>
                 <div class="player__singer">Kid Cudi</div>
                 <div class="player__song">Mr.Rager</div>
                 <div class="player__progress">
                     <div class="current-time time">0:00</div>
                     <div class="progress-bar"></div>
-                    <div class="length-time time"></div>
+                    <div class="length-time time">0:00</div>
                 </div>
                 <div class="player__controls">
                     <div class="controls__prev controls">
-                        <img src="/audio-player/assets/svg/prev.svg" alt="control button" class=""> 
+                        <img src="./assets/svg/prev.svg" alt="control button" class=""> 
                     </div>
                     <div class="controls__play controls">
-                        <img src="/audio-player/assets/svg/play.svg" alt="control button" class="play"> 
+                        <img src="./assets/svg/play.svg" alt="control button" class="play"> 
                     </div>
                     <div class="controls__next controls">
-                        <img src="/audio-player/assets/svg/next.svg" alt="control button" class=""> 
+                        <img src="./assets/svg/next.svg" alt="control button" class=""> 
                     </div>
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <a href="https://rs.school/js-stage0/" class="github-link"><img src="./assets/svg/rssicon.svg" width="90" alt="github icon"></a>
+            <div class="year">2022</div>
+            <a href="https://github.com/hppd0" class="icon-link"><img src="./assets/svg/githubIconFooter.svg" width="30"alt="github icon"></a>
+        </div>
     </div>
-    <footer></footer>
 </body>
 </html>
