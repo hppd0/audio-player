@@ -110,4 +110,3 @@ function getTimeCodeFromNum(num) {
     if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
     return `${String(hours).padStart(2, 0)}:${minutes}:${String(seconds % 60).padStart(2, 0)}`;
 }
-
