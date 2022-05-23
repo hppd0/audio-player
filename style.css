@@ -88,7 +88,7 @@ body {
   display: flex;
   width: 318px;
   height: 318px;
-  background-image: url(./assets/svg/cd.svg);
+  background-image: url('./assets/svg/cd.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -96,6 +96,10 @@ body {
 .cover_img {
   margin: auto;
   width: 150px;
+  height: 150px;
+  background-image: url('./assets/img/MrRager.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 100px;
   border: 5px solid #fe7235;
 }
@@ -109,7 +113,8 @@ body {
 .player__progress {
   display: flex;
   align-items: center;
-  gap: 55px;}
+  gap: 20px;
+}
 
 .current-time {}
 
@@ -117,7 +122,21 @@ body {
   font-size: 14px;
 }
 
-.progress-bar {}
+.timeline {
+  width: 200px;
+  height: 5px;
+  position: relative;
+  background-color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  background: #fe7235;
+  width: 0%;
+  height: 100%;
+  transition: 0.25s;
+}
 
 .length-time {}
 
@@ -129,11 +148,21 @@ body {
 
 .controls__prev {}
 
-.controls {}
+.controls {
+  cursor: pointer;
+}
 
-.controls__play {}
+.controls__play {
+  width: 40px;
+  height: 45px;
+  background-image: url(./assets/svg/play.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.play {}
+.pause {
+  background-image: url(./assets/svg/pause.svg);
+}
 
 .controls__next {}
 
