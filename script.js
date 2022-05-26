@@ -47,8 +47,8 @@ let playlist = [
 function changeSong (i) {
     audio.src = "./assets/music/" + playlist[i].source;
     audio.currentTime = 0;
-    singer.innerHTML = playlist[i].name;
-    song.innerHTML = playlist[i].artist;
+    song.innerHTML = playlist[i].name;
+    singer.innerHTML = playlist[i].artist;
     background.style.backgroundImage = playlist[i].img;
     cover.style.backgroundImage = playlist[i].img;
     audio.play();
