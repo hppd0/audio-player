@@ -12,7 +12,7 @@ const cover = document.querySelector('.cover_img');
 // воспроизведение и остановка звука
 let isPlay = false
 function playAudio () {
-    if (!isPlay) {
+    if (isPlay == false) {
         audio.currentTime = 0;
         isPlay = true;
         play.classList.add('pause');
@@ -52,6 +52,8 @@ function changeSong (i) {
     background.style.backgroundImage = playlist[i].img;
     cover.style.backgroundImage = playlist[i].img;
     audio.play();
+    play.classList.add('pause');
+    isPlay = true;
 };
 
 // предыдущий трек
